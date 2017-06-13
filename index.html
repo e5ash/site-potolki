@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+		
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="popup">
+			<div class="container">
+				<div class="window">
+					<div class="body">
+						<div class="calc-data">
+							<div class="line"><div class="ceiling"><span class="bold">Потолок:</span> <span class="name"></span> <div class="colorCalc"></div></div></div>
+							<div class="line"><div class="wall"><span class="bold">Стена: </span><div class="colorCalc"></div></div></div>
+							<div class="line"><div class="floor"><span class="bold">Напольное покрытие: </span><br /><span class="name"></span> <div class="colorCalc"></div></div></div>
+						</div>
+						<div class="client-data">
+							<form action="">
+								<div class="line"><input type="text" class="input round" placeholder="Ваше имя" name="name"></div>
+								<div class="line"><input type="text" class="input tel round" placeholder="Ваш телефон" name="tel"></div>
+								<div class="line"><button class="button">Получить консультацию</button></div>
+							</form>
+						</div>
+						<div class="thanks">
+							Наш менеджер принял заявку, и перезвонит в течение 15 минут, ожидайте...
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bg"></div>
+		</div>
+		<div class="portfolio-element">
+			<div class="container">
+				<div class="window">
+					<div class="title"></div>
+					<div class="body">
+						
+					</div>
+					<div class="line-order">
+						<form action="">
+							<p class="top">При заключении договора в день замера <span class="bold upper">установка одной люстры бесплатно</span></p>
+							<div class="line">
+								<input type="text" class="input round" name="name" placeholder="Ваше имя" required="required">
+								<input type="text" class="input tel round" name="tel" placeholder="Ваш телефон" required="required">
+								<button class="button popupThanksShow">заказать замер</button>
+							</div>
+							<p class="bottom">Закрепите предложение за собой своим номером телефона</p>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="bg"></div>
+		</div>
+		<header>
+			<div class="container">
+				<div class="row panel">
+					<div class="col col-lg-4 col-md-4 col-sm-5 logo">
+						<a href="">
+							<img src="img/logo/yellow.png" alt="">
+							<p>Установка <br />натяжных потолков <br />в Тюмени</p>
+						</a>
+					</div>
+					<div class="col col-lg-2 col-lg-offset-1 col-md-4 col-sm-3 socials">
+						<ul>
+							<li><a href=""><img src="img/icons/vk.png" alt=""></a></li>
+							<li><a href=""><img src="img/icons/ok.png" alt=""></a></li>
+							<li><a href=""><img src="img/icons/insta.png" alt=""></a></li>
+						</ul>
+					</div>
+					<div class="col col-lg-3 col-lg-offset-2 col-md-4 col-sm-4 contacts">
+						<a href="" class="tel">+7 (3452) 99 99 99</a>
+						<div class="button popupShow">заказать звонок</div>
+					</div>
+				</div>
+				<div class="row bottom">
+					<div class="col-md-12">
+						<div class="title">
+							<h1>Установка натяжных потолков в Тюмени.</h1>
+							<p class="description">Создай комнату своей мечты на нашем онлайн-конструкторе <br /> и получи для нее натяжной потолок уже на следующий день!</p>
+						</div>
+						<div class="images clearfix">
+							<p>При заключении договора в день замера установка люстры <br /> БЕСПЛАТНО!</p>
+							<img src="upload/header/1.jpg" alt="">
+							<img src="upload/header/2.jpg" alt="">
+							<img src="upload/header/3.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="main">
+			<div id="form">
+				<div class="container">
+					<div class="row title">
+						<div class="col col-md-12">
+							<p>При заключении договора в день замера</p>
+							<p class="bold">установка одной люстры бесплатно</p>
+						</div>
+					</div>
+					<div class="row elements">
+						<form action="">
+							<div class="col-sm-2 col-sm-offset-3 col"><input type="text" class="input round" placeholder="Ваше имя" required="required" name="name"></div>
+							<div class="col-sm-2 col"><input type="text" class="input tel round" placeholder="Ваш телефон" required="required" name="tel"></div>
+							<div class="col-sm-2 col"><button class="button popupThanksShow">заказать замер</button></div>
+						</form>
+					</div>
+					<div class="row description">
+						<div class="col-md-12">закрепите предложение за собой своим номером телефона</div>
+					</div>
+				</div>
+			</div>
+			<div id="constructor">
+				<div class="container">
+					<div class="row">
+						<div class="col col-md-12 title">
+							<h2>КОНСТРУКТОР НАТЯЖНЫХ ПОТОЛКОВ</h2>
+							<p>Подбери дизайн натяжного потолка на свой вкус - мы его создадим и установим!</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-md-6 images">
+							<div class="bg"></div>
+							<div class="ceiling"></div>
+							<div class="walls"></div>
+							<div class="floor"></div>
+						</div>
+						<div class="col col-md-6 col-sm-12 content">
+							<div class="list">
+								<div class="item ceiling">
+									<h4>Потолок</h4>
+									<div class="tabs">
+										<ul class="tabs-nav">
+											<li class="select" data-target="tab-glyanec">Глянцевый</li>
+											<li data-target="tab-matoviy">Матовый</li>
+											<li data-target="tab-satinoviy">Сатиновый</li>
+										</ul>
+										<div class="tabs-content">
+											<div class="tab colors glyanec" id="tab-glyanec">
+												<div class="c c-1"></div>
+												<div class="c c-2"></div>
+												<div class="c c-3"></div>
+												<div class="c c-4"></div>
+												<div class="c c-5"></div>
+												<div class="c c-6"></div>
+												<div class="c c-7"></div>
+												<div class="c c-8"></div>
+												<div class="c c-9"></div>
+												<div class="c c-10"></div>
+												<div class="c c-11"></div>
+												<div class="c c-12"></div>
+												<div class="c c-13"></div>
+												<div class="c c-14"></div>
+												<div class="c c-15"></div>
+												<div class="c c-16"></div>
+												<div class="c c-17"></div>
+												<div class="c c-18"></div>
+												<div class="c c-19"></div>
+												<div class="c c-20"></div>
+												<div class="c c-21"></div>
+												<div class="c c-22"></div>
+												<div class="c c-23"></div>
+												<div class="c c-24"></div>
+												<div class="c c-25"></div>
+												<div class="c c-26"></div>
+												<div class="c c-27"></div>
+												<div class="c c-28"></div>
+												<div class="c c-29"></div>
+												<div class="c c-30"></div>
+												<div class="c c-31"></div>
+												<div class="c c-32"></div>
+												<div class="c c-33"></div>
+												<div class="c c-34"></div>
+												<div class="c c-35"></div>
+												<div class="c c-36"></div>
+												<div class="c c-37"></div>
+												<div class="c c-38"></div>
+												<div class="c c-39"></div>
+												<div class="c c-40"></div>
+												<div class="c c-41"></div>
+												<div class="c c-42"></div>
+												<div class="c c-43"></div>
+												<div class="c c-44"></div>
+												<div class="c c-45"></div>
+												<div class="c c-46"></div>
+												<div class="c c-47"></div>
+												<div class="c c-48"></div>
+												<div class="c c-49"></div>
+												<div class="c c-50"></div>
+												<div class="c c-51"></div>
+												<div class="c c-52"></div>
+												<div class="c c-53"></div>
+												<div class="c c-54"></div>
+												<div class="c c-55"></div>
+												<div class="c c-56"></div>
+												<div class="c c-57"></div>
+												<div class="c c-58"></div>
+												<div class="c c-59"></div>
+												<div class="c c-60"></div>
+												<div class="c c-61"></div>
+												<div class="c c-62"></div>
+												<div class="c c-63"></div>
+												<div class="c c-64"></div>
+												<div class="c c-65"></div>
+												<div class="c c-66"></div>
+												<div class="c c-67"></div>
+												<div class="c c-68"></div>
+												<div class="c c-69"></div>
+												<div class="c c-70"></div>
+												<div class="c c-71"></div>
+												<div class="c c-72"></div>
+												<div class="c c-73"></div>
+												<div class="c c-74"></div>
+												<div class="c c-75"></div>
+												<div class="c c-76"></div>
+												<div class="c c-77"></div>
+												<div class="c c-78"></div>
+												<div class="c c-79"></div>
+												<div class="c c-80"></div>
+												<div class="c c-81"></div>
+												<div class="c c-82"></div>
+												<div class="c c-83"></div>
+												<div class="c c-84"></div>
+												<div class="c c-85"></div>
+												<div class="c c-86"></div>
+												<div class="c c-87"></div>
+												<div class="c c-88"></div>
+												<div class="c c-89"></div>
+												<div class="c c-90"></div>
+											</div>
+											<div class="tab colors matoviy" id="tab-matoviy">
+												<div class="c c-30"></div>
+												<div class="c c-31"></div>
+												<div class="c c-32"></div>
+												<div class="c c-33"></div>
+												<div class="c c-34"></div>
+												<div class="c c-35"></div>
+												<div class="c c-36"></div>
+												<div class="c c-37"></div>
+												<div class="c c-38"></div>
+												<div class="c c-39"></div>
+												<div class="c c-40"></div>
+												<div class="c c-41"></div>
+												<div class="c c-42"></div>
+												<div class="c c-43"></div>
+												<div class="c c-44"></div>
+											</div>
+											<div class="tab colors satinoviy" id="tab-satinoviy">
+												<div class="c c-60"></div>
+												<div class="c c-61"></div>
+												<div class="c c-62"></div>
+												<div class="c c-63"></div>
+												<div class="c c-64"></div>
+												<div class="c c-65"></div>
+												<div class="c c-66"></div>
+												<div class="c c-67"></div>
+												<div class="c c-68"></div>
+												<div class="c c-69"></div>
+												<div class="c c-70"></div>
+												<div class="c c-71"></div>
+												<div class="c c-72"></div>
+												<div class="c c-73"></div>
+												<div class="c c-74"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="item wall">
+									<h4>стена</h4>
+									<div class="colors">
+										<div class="c c-101"></div>
+										<div class="c c-102"></div>
+										<div class="c c-103"></div>
+										<div class="c c-104"></div>
+										<div class="c c-105"></div>
+										<div class="c c-106"></div>
+										<div class="c c-107"></div>
+										<div class="c c-108"></div>
+										<div class="c c-109"></div>
+										<div class="c c-110"></div>
+										<div class="c c-111"></div>
+										<div class="c c-112"></div>
+										<div class="c c-113"></div>
+										<div class="c c-114"></div>
+										<div class="c c-115"></div>
+									</div>
+								</div>
+								<div class="item floor">
+									<h4>Напольное покрытие</h4>
+									<div class="tabs">
+										<ul class="tabs-nav">
+											<li class="select" data-target="tab-plitka">Плитка</li>
+											<li data-target="tab-laminat">Ламинат</li>
+											<li data-target="tab-kavrolin">Кавролин</li>
+										</ul>
+										<div class="tabs-content">
+											<div class="tab colors" id="tab-plitka">
+												<div class="c c-201"></div>
+												<div class="c c-202"></div>
+												<div class="c c-203"></div>
+												<div class="c c-204"></div>
+												<div class="c c-205"></div>
+												<div class="c c-206"></div>
+												<div class="c c-207"></div>
+												<div class="c c-208"></div>
+												<div class="c c-209"></div>
+												<div class="c c-210"></div>
+												<div class="c c-211"></div>
+												<div class="c c-212"></div>
+												<div class="c c-213"></div>
+												<div class="c c-214"></div>
+												<div class="c c-215"></div>
+											</div>
+											<div class="tab colors" id="tab-laminat">
+												<div class="c c-41"></div>
+												<div class="c c-42"></div>
+												<div class="c c-43"></div>
+												<div class="c c-44"></div>
+												<div class="c c-45"></div>
+												<div class="c c-46"></div>
+												<div class="c c-47"></div>
+												<div class="c c-48"></div>
+												<div class="c c-49"></div>
+												<div class="c c-50"></div>
+												<div class="c c-51"></div>
+												<div class="c c-52"></div>
+												<div class="c c-53"></div>
+												<div class="c c-54"></div>
+												<div class="c c-55"></div>
+											</div>
+											<div class="tab colors" id="tab-kavrolin">
+												<div class="c c-56"></div>
+												<div class="c c-57"></div>
+												<div class="c c-58"></div>
+												<div class="c c-59"></div>
+												<div class="c c-60"></div>
+												<div class="c c-61"></div>
+												<div class="c c-62"></div>
+												<div class="c c-63"></div>
+												<div class="c c-64"></div>
+												<div class="c c-65"></div>
+												<div class="c c-66"></div>
+												<div class="c c-67"></div>
+												<div class="c c-68"></div>
+												<div class="c c-69"></div>
+												<div class="c c-70"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="submit tac">
+								<p>Узнай стоимость созданного натяжного потолка!</p>
+								<p>Наш специалист перезвонит и согласует время.</p>
+								<button class="button popupCalcShow">узнать стоимость</button>
+							</div>
+							<div class="share">
+								<div class="text">Поделись результатом <br />с друзьями!</div>
+								<div class="icons">
+									<a href="#" onclick="Share.vkontakte('URL','TITLE','IMG_PATH','DESC')"><img src="img/icons/vk.png" alt=""></a>
+									<a href="#" onclick="Share.odnoklassniki('URL','DESC')"><img src="img/icons/ok.png" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="calc">
+				<div class="container">
+					<div class="row title">
+						<div class="col col-md-12">
+							<h2>РАСЧЕТ СТОИМОСТИ онлайн</h2>
+							<p class="description">Для более точного расчета стоимости закажите безплатный замер <br  class="hidden-lg hidden-md hidden-sm" /> +7 (3452) 99 99 99</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-2 col-sm-offset-2 bold">Производитель:</div>
+						<div class="col col-sm-2">
+							<div class="drop-down">
+								<p></p>
+								<ul>
+									<li><input type="radio" name="producers" value="1" checked><label>Россия</label></li>
+									<li><input type="radio" name="producers" value="2"><label>США</label></li>
+									<li><input type="radio" name="producers" value="3"><label>Канада</label></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-2 col-sm-offset-2 bold">Материал:</div>
+						<div class="col col-sm-2">
+							<div class="drop-down">
+								<p></p>
+								<ul>
+									<li><input type="radio" name="cloth"  value="1" checked><label>Ткань 1</label></li>
+									<li><input type="radio" name="cloth" value="2" ><label>Ткань 2</label></li>
+									<li><input type="radio" name="cloth" value="3" ><label>Ткань 3</label></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-2 col-sm-offset-2 bold">Помещение:</div>
+						<div class="col col-sm-2">
+							<input type="text" class="input" placeholder="Площадь" name="area">
+						</div>
+						<div class="col col-sm-2">
+							<input type="text" class="input" placeholder="Кол-во углов" name="corners">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-2 col-sm-offset-2 bold">Освещение:</div>
+						<div class="col col-sm-2">
+							<input type="text" class="input" placeholder="Кол-во люстр" name="chandeliers">
+						</div>
+						<div class="col col-sm-2">
+							<input type="text" class="input" placeholder="Кол-во светильников" name="fixtures">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-2 col-sm-offset-2 col-xs-6 bold">Шумоизоляция:</div>
+						<div class="col col-sm-2 col-xs-6">
+							<div class="checkbox">
+								<input type="checkbox" checked id="shum">
+								<label for="shum"></label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-2 col-sm-offset-4">
+							<input type="text" class="input" name="name" placeholder="Ваше имя">
+						</div>
+						<div class="col col-sm-2">
+							<input type="text" class="input" name="tel" placeholder="Ваш телефон">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-12">
+							<button class="button popupThanksShow">Узнать стоимость</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="nums" class="tac">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xs-12"><h2>НАШИ ДОСТИЖЕНИЯ</h2></div>
+					</div>
+					<div class="row list">
+						<div class="col-md-3 col-sm-6 col">
+							<div class="num">8</div>
+							<p>лет мы занимаемся <br />производством, <br />продажей <br />и установкой <br />потолков</p>
+						</div>
+						<div class="col-md-3 col-sm-6 col">
+							<div class="num fz50">170</div>
+							<p>м.кв. натяжных <br />потолков мы <br />устанавливаем <br />за 1 день</p>
+						</div>
+						<div class="col-md-3 col-sm-6 col">
+							<div class="num">10</div>
+							<p>лет - официальная <br />гарантия на материал <br />и монтажные работы</p>
+						</div>
+						<div class="col-md-3 col-sm-6 col">
+							<div class="num">65</div>
+							<p>% новых клиентов <br />приходят к нам по <br />рекомендациям потолков</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="why-we">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xs-12"><h2>ПОЧЕМУ МЫ ЛУЧШИЕ</h2></div>
+					</div>
+					<div class="row">
+						<div class="col col-xs-12 list">
+							<div class="item">
+								<h3>Натяжной потолок под ключ</h3>
+								<p>Закажите все в одном месте: карниз, люстру,светильники, шумоизоляция, плинтуса</p>
+							</div> 
+							<div class="item">
+								<h3>ОПЫТНЫЕ СПЕЦИАЛИСТЫ</h3>
+								<p>Опыту наших монтажников можно позавидовать: выполнение государственных тендеров, тысячи смонтированных квадратных метров</p>
+							</div>
+							<div class="item">
+								<h3>ОТЛИЧНЫЕ МАТЕРИАЛЫ</h3>
+								<p>Все материалы в нашей компании качественные и экологичные, не имеют специфического запаха и пятен.</p>
+							</div>
+							<div class="item">
+								<h3>ФИКСИРОВАННАЯ СТОИМОСТЬ</h3>
+								<p>В отличие от конкурентов, мы даем сразу четкий, фиксированный расчет сметы под Ваши параметры потолков.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="portfolio">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xs-12"><h2>КАКИЕ ВИДЫ НАТЯЖНЫХ ПОТОЛКОВ <br />ВЫ МОЖЕТЕ У НАС ЗАКАЗАТЬ</h2></div>
+					</div>
+					<div class="row">
+						<div class="col col-md-3 col-sm-6 item">
+							<div>
+								<img src="upload/portfolio/1.jpg" alt="">
+								<h3>Глянцевые</h3>
+								<a href="#">подробнее</a>
+								<button class="button popupShow">узнать стоимость</button>
+								<div class="hidden">
+									<div class="images row">
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+									</div>
+									<h2 class="title">Глянцевые потолки</h2>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-3 col-sm-6 item">
+							<div>
+								<img src="upload/portfolio/2.jpg" alt="">
+								<h3>Матовые</h3>
+								<a href="#">подробнее</a>
+								<button class="button popupShow">узнать стоимость</button>
+								<div class="hidden">
+									<div class="images row">
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+									</div>
+									<h2 class="title">Глянцевые потолки</h2>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-3 col-sm-6 item">
+							<div>
+								<img src="upload/portfolio/3.jpg" alt="">
+								<h3>Сатиновые</h3>
+								<a href="#">подробнее</a>
+								<button class="button popupShow">узнать стоимость</button>
+								<div class="hidden">
+									<div class="images row">
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+									</div>
+									<h2 class="title">Глянцевые потолки</h2>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-3 col-sm-6 item">
+							<div>
+								<img src="upload/portfolio/4.jpg" alt="">
+								<h3>Тканевые</h3>
+								<a href="#">подробнее</a>
+								<button class="button popupShow">узнать стоимость</button>
+								<div class="hidden">
+									<div class="images row">
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+									</div>
+									<h2 class="title">Глянцевые потолки</h2>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-md-3 col-sm-6 col-md-offset-3 item">
+							<div>
+								<img src="upload/portfolio/5.jpg" alt="">
+								<h3>С фотопечатью</h3>
+								<a href="#">подробнее</a>
+								<button class="button popupShow">узнать стоимость</button>
+								<div class="hidden">
+									<div class="images row">
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+									</div>
+									<h2 class="title">Глянцевые потолки</h2>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col col-md-3 col-sm-6 item">
+							<div>
+								<img src="upload/portfolio/6.jpg" alt="">
+								<h3>Многоуровневые</h3>
+								<a href="#">подробнее</a>
+								<button class="button popupShow">узнать стоимость</button>
+								<div class="hidden">
+									<div class="images row">
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/1.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/2.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/3.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/4.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/5.jpg" alt=""></div>
+										<div class="col col-md-4 col-sm-6"><img src="upload/portfolio/6.jpg" alt=""></div>
+									</div>
+									<h2 class="title">Глянцевые потолки</h2>
+									<div class="text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+										<p>Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="reviews">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xs-12"><h2>Выполненные работы с отзывами</h2></div>
+					</div>
+					<div class="slider">
+						<div class="item">
+							<div class="row">
+								<div class="col-md-12 col">
+									<div class="col img"><img src="upload/reviews.jpg" alt=""></div>
+									<div class="col content">
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Площадь (м2)</div>
+											<div class="col-md-6 col">98</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Углы (шт.)</div>
+											<div class="col-md-6 col">12</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Светильники (шт.)</div>
+											<div class="col-md-6 col">8</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Люстры (шт.)</div>
+											<div class="col-md-6 col">1</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Материал</div>
+											<div class="col-md-6 col">Матовый</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Произвдитель</div>
+											<div class="col-md-6 col">Россия</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 col">
+									<div class="data-item row review">
+										<div class="col-md-12 col"><span class="bold">Отзыв о работе: </span> <span class="italic">“Заказала звонок с сайта. Приехали на следующий день. <br />Установили потолок. Очень довольны качеством и обслуживанием!”</span></div>
+									</div>
+									<div class="data-item row">
+										<div class="col-md-12 col"><span class="bold">г. Тюмень. Михаил Уткин.</span> <img src="img/icons/vk.png" alt="" class="icon-social"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="row">
+								<div class="col-md-12 col">
+									<div class="col img"><img src="upload/reviews.jpg" alt=""></div>
+									<div class="col content">
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Площадь (м2)</div>
+											<div class="col-md-6 col">98</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Углы (шт.)</div>
+											<div class="col-md-6 col">12</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Светильники (шт.)</div>
+											<div class="col-md-6 col">8</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Люстры (шт.)</div>
+											<div class="col-md-6 col">1</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Материал</div>
+											<div class="col-md-6 col">Матовый</div>
+										</div>
+										<div class="data-item row">
+											<div class="col-md-6 col bold">Произвдитель</div>
+											<div class="col-md-6 col">Россия</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12 col">
+									<div class="data-item row">
+										<div class="col-md-12 col review"><span class="bold">Отзыв о работе: </span> <span class="italic">“Заказала звонок с сайта. Приехали на следующий день. <br />Установили потолок. Очень довольны качеством и обслуживанием!”</span></div>
+									</div>
+									<div class="data-item row">
+										<div class="col-md-12 col"><span class="bold">г. Тюмень. Михаил Уткин.</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 col">
+							<div class="button popupShow">хочу так же</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="certificates">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xs-12"><h2>СЕРТИФИКАТЫ КАЧЕСТВА</h2></div>
+					</div>
+					<div class="list row">
+						<div class="col col-xs-12">
+							<div class="item col">
+								<img src="upload/certificates/1.jpg" alt="">
+								<p>Сертификат на тканевые <br />полотна Дескор</p>
+							</div>
+							<div class="item col">
+								<img src="upload/certificates/2.jpg" alt="">
+								<p>Сертификат соответствия <br />на пленку ПВХ</p>
+							</div>
+							<div class="item col">
+								<img src="upload/certificates/3.jpg" alt="">
+								<p>Пожарный сертификат <br />на пленку ПВХ</p>
+							</div>
+							<div class="item col">
+								<img src="upload/certificates/4.jpg" alt="">
+								<p>Сертификат на тканевые <br />потолки Clipso</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="working" class="tac">
+				<div class="container">
+					<div class="row">
+						<div class="col col-xs-12"><h2>КАК МЫ РАБОТАЕМ</h2></div>
+					</div>
+					<div class="row">
+						<div class="col-md-3 col item">
+							<img src="img/working/1.png" alt="">
+							<p>Вы оставляете заявку или связываетесь с нами <br />по телефону <br />+380 (50) 866-29-36 <br />+380 (93) 162-79-79</p>
+						</div>
+						<div class="col-md-3 col item">
+							<img src="img/working/2.png" alt="">
+							<p>Бесплатно к Вам выезжает специалист, делает замер Вашего потолка и сообщает стоимость наших услуг</p>
+						</div>
+						<div class="col-md-3 col item">
+							<img src="img/working/3.png" alt="">
+							<p>Мы заключаем <br />с Вами договор, вносится <br />предоплата</p>
+						</div>
+						<div class="col-md-3 col item">
+							<img src="img/working/4.png" alt="">
+							<p>В согласованное время к Вам приезжают монтажники <br />и устанавливают потолок</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="contacts">
+				<div class="plashka">
+					<div class="container">
+						<div class="row">
+							<div class="col col-lg-4 col-lg-offset-4 col-sm-6 col-sm-offset-3">
+								<h2><span class="blue">наши</span><br />контакты</h2>
+								<p class="bold"><img src="img/icons/tel.png" class="icon icon-tel" alt=""><a href="">+7 (3452) 99 99 99</a></p>
+								<p><img src="img/icons/marker.png" class="icon icon-marker" alt="">г. Тюмень. ул. чекистов 28. Оф. 7</p>
+								<div class="button popupShow">заказать звонок</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-6 col logo">
+						<a href=""><img src="img/logo/white.png" alt="">
+						<p>Установка <br />натяжных потолков <br />в Тюмени</p></a>
+					</div>
+					<div class="col-md-4 col-sm-6 col nav">
+						<ul>
+							<li><a href="">Матовые натяжные потолки</a></li>
+							<li><a href="">Глянцевые натяжные потолки</a></li>
+							<li><a href="">Двухуровневые натяжные потолки</a></li>
+							<li><a href="">Натяжные потолки кухня</a></li>
+							<li><a href="">Натяжные потолки спальня</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2 col-md-offset-2 col socials hidden-sm">
+						<p>Мы в соцсетях</p>
+						<a href=""><img src="img/icons/vk.png" alt=""></a>
+						<a href=""><img src="img/icons/ok.png" alt=""></a>
+						<a href=""><img src="img/icons/insta.png" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<link rel="stylesheet" href="css/libs.min.css">
+		<link rel="stylesheet" href="css/style.min.css">
+		<link rel="stylesheet" href="css/mobile/min.css">
+		<script src="js/libs.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/popup.js"></script>
+		<script src="js/share.js"></script>
+	</body>
+</html>

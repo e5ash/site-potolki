@@ -1,0 +1,92 @@
+.popup {
+  display: none; }
+
+.popup, .popup .bg, .portfolio-element, .portfolio-element .bg {
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.popup .input {
+  width: 100% !important; }
+
+.popup .button {
+  width: 100% !important; }
+
+.popup .window, .portfolio-element .window {
+  z-index: 1002;
+  position: relative;
+  width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #DEE1E1;
+  padding: 15px 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.popup .container, .portfolio-element .container {
+  height: 100%; }
+
+.popup .title, .portfolio-element .title {
+  text-align: center; }
+
+.popup .close, .portfolio-element .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px; }
+
+.popup .bg, .portfolio-element .bg {
+  z-index: 1001;
+  position: fixed;
+  background: rgba(37, 49, 49, 0.97); }
+
+.popup .line, .portfolio-element .line {
+  margin-bottom: 10px; }
+
+.popup .thanks, .portfolio-element .thanks {
+  text-align: center; }
+
+.popup .colorCalc, .portfolio-element .colorCalc {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  height: 15px;
+  top: 2px;
+  background-color: #FFF; }
+
+.popup .calc-data, .popup .thanks, .portfolio-element .calc-data, .portfolio-element .thanks {
+  display: none; }
+
+.portfolio-element {
+  display: none; }
+  .portfolio-element .window {
+    width: 100%;
+    background: none; }
+  .portfolio-element h2 {
+    color: #fff;
+    margin-bottom: 65px; }
+  .portfolio-element .images {
+    margin-bottom: 20px; }
+    .portfolio-element .images .col {
+      margin-bottom: 20px; }
+    .portfolio-element .images img {
+      display: block;
+      width: 296px;
+      height: 196px;
+      border: 2px solid #FFC425;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto; }
+  .portfolio-element .text {
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 540px; }
+    .portfolio-element .text p {
+      margin-bottom: 15px; }
+  .portfolio-element .line-order {
+    color: #fff; }

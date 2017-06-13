@@ -1,0 +1,680 @@
+@font-face
+	src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Regular.otf')
+	font-family: AvenirNextCyrRegular
+
+@font-face
+	src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Medium.otf')
+	font-family: AvenirNextCyrMedium
+
+@font-face
+	src: url('../fonts/AvenirNextCyr/AvenirNextCyr-MediumItalic.otf')
+	font-family: AvenirNextCyrMediumItalic
+
+@font-face
+	src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Bold.otf')
+	font-family: AvenirNextCyrBold
+
+@font-face
+	src: url('../fonts/AvenirNextCyr/AvenirNextCyr-Heavy.otf')
+	font-family: AvenirNextCyrHeavy
+
+
+
+@import variables
+
+*
+	margin: 0
+	padding: 0
+
+body
+	font: $fz $ff-medium
+	color: $c1
+	background: $c2
+	box-sizing: border-box
+	overflow-x: hidden
+
+@import grid
+@import text
+@import elements/form
+@import elements/popup
+@import elements/tabs
+
+
+
+
+.title
+	text-align: center
+
+
+
+header
+	color: $c2
+	background: url('../img/bg/header.jpg') no-repeat center top
+	background-size: cover
+	padding-top: 28px
+	padding-bottom: 50px
+	a
+		color: $c2
+	.logo
+		img
+			display: block
+			float: left
+
+			margin-right: 10px
+	.socials
+		text-align: center
+		padding-top: 11px
+		padding-left: 30px
+		li
+			display: inline-block
+			margin-right: 10px
+			&:last-of-type
+				margin-right: 0
+		a
+			display: inline-block
+			&:hover
+				img
+					-webkit-filter: none
+					-moz-filter: none
+					-ms-filter: none
+					-o-filter: none
+					filter: none
+		img
+			display: block
+			-webkit-filter: grayscale(100%)
+			-moz-filter: grayscale(100%)
+			-ms-filter: grayscale(100%)
+			-o-filter: grayscale(100%)
+			filter: grayscale(100%)
+			filter: gray
+			transition: .3s
+
+
+	.contacts
+		.tel
+			display: block
+			font-size: 16px
+			font-family: AvenirNextCyrBold
+			margin-bottom: 6px
+			text-align: right
+			cursor: default
+		.button
+			float: right
+
+	.bottom
+		text-align: center
+		margin-top: 65px
+
+	
+	.description
+		font-family: $ff
+		font-size: 16px
+		margin-bottom: 23px
+
+	.images
+		font-family: $ff-bold
+		font-size: 20px
+		height: 360px
+		position: relative
+		p
+			// margin-bottom: 28px
+
+		img
+			position: absolute
+			display: block
+			// top: 70px
+			border: 2px solid #FFFFFF
+			&:nth-of-type(1)
+				z-index: 1
+				margin-left: 175px
+				top: 150px
+			&:nth-of-type(2)
+				z-index: 2
+				margin-left: 335px
+				top: 110px
+			&:nth-of-type(3)
+				z-index: 3
+				margin-left: 495px
+				top: 70px
+
+
+
+#form
+	padding-top: 45px
+	padding-bottom: 45px
+	text-align: center
+	.title
+		.bold
+			text-transform: uppercase
+			color: #272727
+	.elements
+		padding-top: 20px
+		padding-bottom: 15px
+
+#constructor
+	position: relative
+	background: #F5F5F5
+	padding-top: 65px
+	padding-bottom: 30px
+	&:after
+		z-index: 1
+		display: block
+		content: ''
+		position: relative
+		margin-left: auto
+		margin-right: auto
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 35px 51px 0 51px
+		border-color: #f5f5f5 transparent transparent transparent
+		top: 65px
+	.c
+		float: left
+		width: 20px
+		height: 30px
+		margin-right: 10px
+		margin-bottom: 10px
+	.title
+		margin-bottom: 40px
+	.images
+		background: url('../img/calc/bg-with.png') no-repeat center top
+		height: 670px
+		.bg
+			z-index: 5
+			position: absolute
+			background: url('../img/calc/bg.png') no-repeat center top
+			width: 460px
+			height: 670px
+			top: 0px
+			left: 15px
+		.ceiling
+			z-index: 4
+			position: absolute
+			background-image: url("../img/calc/ceiling.png")
+			width: 460px
+			height: 215px
+			left: 15px
+			top: 0
+			background-blend-mode: screen
+			-webkit-clip-path: polygon(0% 0%, 0 93%, 25% 100%, 47% 95%, 60% 100%, 100% 71%, 100% 0%)
+			clip-path: polygon(0% 0%, 0 93%, 25% 100%, 47% 95%, 60% 100%, 100% 71%, 100% 0%)
+		.walls
+			z-index: 3
+			position: absolute
+			background-image: url("../img/calc/wall.png")
+			width: 457px
+			height: 312px
+			top: 176px
+			left: 15px
+			background-blend-mode: screen
+			
+		.floor
+			z-index: 2
+			position: absolute
+			background-image: url("../img/calc/floor.png")
+			width: 460px
+			height: 182px
+			bottom: 0
+			left: 15px
+			background-blend-mode: screen
+			-webkit-clip-path: polygon(0 8%, 21% 1%, 47% 5%, 62% 0, 83% 13%, 88% 12%, 100% 20%, 100% 100%, 0% 100%)
+			clip-path: polygon(0 8%, 21% 1%, 47% 5%, 62% 0, 83% 13%, 88% 12%, 100% 20%, 100% 100%, 0% 100%)
+	.c
+		cursor: pointer
+	.item
+		padding-bottom: 20px
+	.tab
+		display: none
+	h4
+		margin-bottom: 10px
+	
+	.submit
+		margin-bottom: 25px
+		font-family: $ff-medium
+		p
+			&:last-of-type
+				margin-bottom: 12px
+		button
+			margin-left: auto
+			margin-right: auto
+	.share
+		.text
+			float: left
+			margin-right: 20px
+			color: #4d4d4d
+		a
+			display: inline-block
+			margin-right: 10px
+@import elements/colors
+	
+
+#calc
+	padding-top: 65px
+	padding-bottom: 45px
+	.row
+		line-height: 28px
+		margin-bottom: 20px
+	.title
+		margin-bottom: 40px
+	.drop-down
+		line-height: 1.1
+
+	.button
+		margin-left: auto
+		margin-right: auto
+
+	.input
+		border: 1px solid #E0E0E0
+
+#nums
+	padding-top: 60px
+	padding-bottom: 61px
+	background: url('../img/bg/nums.png') no-repeat center top
+	h2
+		padding-bottom: 40px
+	.num
+		padding-top: 32px
+		width: 140px
+		height: 140px
+		margin-left: auto
+		margin-right: auto
+		box-sizing: border-box
+		border: 2px solid #FFC525
+		border-radius: 50%
+		color: #a2a2a2
+		font-size: 60px
+		font-family: $ff-heavy
+		// text-shadow: 1px 1px 1px rgba(255,255,255,.87),  -1px -1px 0px rgba(0,0,0,.31)
+		margin-bottom: 15px
+		&.fz50
+			padding-top: 37px
+			font-size: 50px
+	p
+		font-family: $ff-medium
+
+#why-we
+	padding-top: 30px
+	padding-bottom: 30px
+	h2
+		padding-bottom: 55px
+	h3
+		font-size: 14px
+		color: #272727
+		font-family: $ff-bold
+		text-transform: uppercase
+		margin-bottom: 5px
+	.list
+		height: 280px
+		position: relative
+	.item
+		position: absolute
+		width: 250px
+		border: 2px solid #FFC425
+		box-sizing: border-box
+		padding: 15px 15px 15px
+		background: $c2
+		&:nth-of-type(1)
+			z-index: 1
+			left: 32px
+			top: 0
+		&:nth-of-type(2)
+			width: 290px
+			z-index: 2
+			left: 172px
+			top: 110px
+
+		&:nth-of-type(3)
+			padding-top: 20px
+			padding-bottom: 22px
+			width: 305px
+			z-index: 1
+			right: 145px
+			top: 0
+			h3
+				margin-bottom: 10px
+
+		&:nth-of-type(4)
+			width: 275px
+			z-index: 2
+			right: 37px
+			top: 110px
+
+#portfolio
+	position: relative
+	background: url('../img/bg/portfolio.jpg') no-repeat center
+	padding-top: 30px
+	padding-bottom: 92px
+	&:before
+		z-index: 1
+		display: block
+		content: ''
+		position: relative
+		margin-left: auto
+		margin-right: auto
+		width: 0
+		height: 0
+		border-style: solid
+		border-width: 35px 51px 0 51px
+		border-color: #fff transparent transparent transparent
+		top: -30px
+	h2
+		color: $c2
+		margin-bottom: 70px
+	.list
+		text-align: center
+
+	img
+		display: block
+		margin-right: auto
+		margin-left: auto
+		width: 212px
+	a
+		color: #4a4a4a
+		border-bottom: 1px solid #4a4a4a
+	.button
+		margin-top: 15px
+		margin-right: auto
+		margin-left: auto
+	.item
+		margin-bottom: 20px
+		text-align: center
+		> div
+			background: $c2
+			padding-top: 4px
+			padding-bottom: 20px
+			box-sizing: border-box
+	h3
+		font-size: 16px
+		font-family: $ff-bold
+		color: #272727
+		margin-top: 15px
+		margin-bottom: 5px
+
+	.hidden
+		display: none
+
+
+	
+
+
+#reviews
+	padding-top: 30px
+	padding-bottom: 70px
+	font-family: $ff-medium
+	h2
+		padding-bottom: 50px
+
+	.slider
+		position: relative
+		width: 600px
+		margin-left: auto
+		margin-right: auto
+		.slick-arrow
+			opacity: .2
+			background: url('../img/arrow-right.png')
+			width: 32px
+			height: 32px
+			transition: .3s
+			top: 27%
+			&:before
+				display: none
+			&:hover
+				opacity: 1
+		.slick-prev
+			left: -125px
+			transform: rotate(180deg)
+		.slick-next
+			right: -125px
+	.row
+		margin-right: auto
+		margin-left: auto
+	.col
+		padding-left: 0
+		padding-right: 0
+		box-sizing: border-box
+	.content
+		width: 300px
+		float: left
+	.img
+		width: 300px
+		float: right
+		margin-top: 5px
+
+	.data-item
+		margin-bottom: 16px
+
+	.italic
+		font-family: $ff-medium-italic
+
+	.review
+		margin-bottom: 5px
+
+	.button
+		margin-right: auto
+		margin-left: auto
+	
+	.icon-social
+		position: relative
+		display: inline-block
+		width: 24px
+		height: 24px
+		top: 6px
+		margin-left: 3px
+#certificates
+	background: #F7F2F2
+	padding-top: 60px
+	padding-bottom: 65px
+	h2
+		padding-bottom: 60px
+	.row
+		text-align: center
+		width: 860px
+		margin-right: auto
+		margin-left: auto
+	.item
+		float: left
+		display: block
+		width: 170px
+		margin-right: 20px
+		margin-left: 20px
+	img
+		display: block
+		margin-bottom: 25px
+		margin-right: auto
+		margin-left: auto
+		border: 3px solid #FFC525
+	p
+		color: #303030
+		font-family: $ff-bold
+
+#working
+	padding-top: 65px
+	padding-bottom: 120px
+	background: url('../img/bg/working.jpg')  no-repeat center top
+	h2
+		padding-bottom: 100px
+	img
+		display: block
+		margin-right: auto
+		margin-left: auto
+		margin-bottom: 25px
+	.item
+		&:after
+			content: ''
+			position: absolute
+			display: block
+			top: 30px
+			right: -10px
+			background: url('../img/working/arrow.png')
+			width: 18px
+			height: 32px
+		&:last-of-type
+			&:after
+				display: none
+
+#contacts
+	position: relative
+	background: url('../img/bg/contacts.jpg') no-repeat center top
+	height: 532px
+	.plashka
+		position: absolute
+		top: 40px
+		width: 100%
+		h2
+			text-align: left
+			color: #272727
+			font-size: 25px
+			line-height: 22px
+			margin-bottom: 30px
+			.blue
+				color: #0b77c2
+				font-size: 18px
+		.col
+			background-color: #FFF
+			padding-top: 21px
+			padding-bottom: 35px
+			padding-left: 40px
+			padding-right: 40px
+		p
+			margin-bottom: 12px
+			font-family: $ff-medium
+			&.bold
+				font-size: 20px
+				font-family: $ff-bold
+				color: #272727
+		.button
+			margin-top: 25px
+			margin-right: auto
+			margin-left: auto
+
+		.icon
+			position: relative
+			margin-right: 5px
+			&.icon-tel
+				top: 0px
+			&.icon-marker
+				top: 3px
+footer
+	background: #253231
+	color: $c2
+	padding-top: 40px
+	padding-bottom: 50px
+	a
+		color: $c2
+	.logo
+		img
+			display: block
+			float: left
+			margin-right: 15px
+		p
+			font-family: $ff-medium
+	.nav
+		padding-left: 67px
+		li
+			margin-bottom: 15px
+			&:last-of-type
+				margin: 0
+		a
+			border-bottom: 1px solid $c2
+			transition: .3s
+			&:hover
+				color: #FFC425
+				border-bottom: 1px solid #FFC425
+	.socials
+		text-align: right
+		p
+			margin-bottom: 10px
+		a
+			display: inline-block
+			margin-left: 8px
+			&:hover
+				img
+					display: block
+					-webkit-filter: grayscale(100%)
+					-moz-filter: grayscale(100%)
+					-ms-filter: grayscale(100%)
+					-o-filter: grayscale(100%)
+					filter: grayscale(100%)
+					filter: gray
+					
+		img
+			display: block
+			transition: .3s
+.line-order
+    .input, .button
+        margin-top: 10px
+        display: inline-block
+        width: 140px
+        margin-right: 17px
+.subpage
+	padding-top: 60px
+	padding-bottom: 80px
+	h1
+		color: #272727
+		font-size: 30px
+		text-align: left
+		margin-bottom: 25px
+	.images
+		margin-bottom: 15px
+		.item
+			padding-left: 0
+			padding-right: 0
+
+			&:nth-of-type(odd)
+				img
+					margin-left: 0
+					margin-right: 0
+		img
+			display: block
+			margin-left: auto
+			margin-right: auto
+			margin-bottom: 20px
+			max-width: 100%
+			border: 3px solid #FFC425
+	.nav
+		margin-bottom: 20px
+		> div
+			margin-top: 9px
+			background-color: #FFF
+			box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13)
+			padding: 9px
+		p
+			color: #272727
+			font-family: $ff-bold
+			margin-bottom: 8px
+			padding-left: 10px
+		ul
+			li
+				border-bottom: 1px solid #E8E8E8
+				&.select
+					a
+						color: #fdc500
+						&:after
+							position: absolute
+							display: block
+							content: ''
+							left: 0px
+							top: 10px
+							width: 2px
+							height: 19px
+							background-color: #fdc500
+			a
+				position: relative
+				display: block
+				padding-top: 10px
+				padding-bottom: 10px
+				padding-left: 7px
+		.home-page
+			display: block
+			color: #5c5c5c
+			font-family: $ff
+			margin-top: 10px
+			margin-bottom: 5px
+			padding-left: 7px
+	.line-order
+		margin-top: 50px
+		.top
+			margin-bottom: 2px
+		.bottom
+			margin-top: 10px

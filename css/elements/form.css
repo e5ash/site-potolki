@@ -1,0 +1,112 @@
+.button, .input, .textarea {
+  display: block;
+  outline: none;
+  border: none;
+  background: #fff;
+  font-family: "AvenirNextCyrRegular", sans-serif; }
+
+.button {
+  position: relative;
+  cursor: pointer;
+  background: #FFC425;
+  text-align: center;
+  text-transform: uppercase;
+  width: 140px;
+  color: #3d3d3d;
+  font-size: 11px;
+  font-family: "AvenirNextCyrBold", sans-serif;
+  line-height: 30px;
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  -webkit-transition: .3s;
+  transition: .3s; }
+  .button:hover {
+    background: #F0B923; }
+  .button:active {
+    top: 2px; }
+
+.input {
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #D1D1D1;
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  font-family: "AvenirNextCyrMedium", sans-serif; }
+  .input.round {
+    -webkit-border-radius: 20px;
+            border-radius: 20px; }
+
+.checkbox input {
+  display: none; }
+
+.checkbox input:checked + label {
+  background-image: url("../img/checkbox-checked.jpg"); }
+
+.checkbox label {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url("../img/checkbox-default.jpg");
+  cursor: pointer; }
+
+.drop-down {
+  position: relative;
+  width: 100%;
+  color: #737373;
+  font-size: 12px; }
+  .drop-down input {
+    display: none; }
+  .drop-down p {
+    position: relative;
+    border: 1px solid #E0E0E0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 32px;
+    padding: 8px 40px 8px 10px;
+    cursor: pointer; }
+    .drop-down p:after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background-color: #E0E0E0;
+      background-image: url("../img/arrow-down.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      top: -1px;
+      right: 0;
+      cursor: pointer; }
+  .drop-down ul {
+    display: none; }
+  .drop-down label {
+    cursor: pointer; }
+  .drop-down.open p:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .drop-down.open ul {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    padding: 10px;
+    background-color: #FFF;
+    width: 100%;
+    top: 31px;
+    border: 1px solid #E0E0E0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .drop-down.open ul li {
+      margin-bottom: 5px;
+      cursor: pointer; }
+      .drop-down.open ul li:last-of-type {
+        margin-bottom: 0; }
+
+.textarea {
+  resize: none; }
+  .textarea :placeholder {
+    color: #737373; }

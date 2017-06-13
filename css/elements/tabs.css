@@ -1,0 +1,16 @@
+.tabs .tabs-nav {
+  margin-top: 8px;
+  margin-bottom: 15px; }
+  .tabs .tabs-nav li {
+    display: inline-block;
+    margin-right: 32px;
+    border-bottom: 1px solid #363636;
+    cursor: pointer; }
+    .tabs .tabs-nav li.select {
+      font-family: "AvenirNextCyrBold", sans-serif;
+      border-bottom: none; }
+    .tabs .tabs-nav li:hover {
+      border-bottom: none; }
+
+.tabs .tabs-content {
+  min-height: 20px; }
